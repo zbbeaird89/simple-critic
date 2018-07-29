@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1024"
+   height="3000"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="log_in.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35355339"
+     inkscape:cx="114.08115"
+     inkscape:cy="2464.3311"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:window-width="1317"
+     inkscape:window-height="744"
+     inkscape:window-x="49"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:snap-global="true"
+     inkscape:snap-grids="true"
+     inkscape:snap-to-guides="true"
+     inkscape:snap-bbox="true" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Layer" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,1947.6378)">
+    <text
+       xml:space="preserve"
+       style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Droid Serif;-inkscape-font-specification:Droid Serif"
+       x="682.8631"
+       y="62.913525"
+       id="text3809"
+       sodipodi:linespacing="125%"
+       transform="translate(0,284.36218)"><tspan
+         sodipodi:role="line"
+         id="tspan3811"
+         x="682.8631"
+         y="62.913525"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ff3333;fill-opacity:1;font-family:Source Code Pro;-inkscape-font-specification:Source Code Pro" /></text>
+    <path
+       style="fill:none;stroke:#ff3333;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 903.48864,-1905.5639 60,0"
+       id="path3819"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#ff3333;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 903.48864,-1885.5639 60,0"
+       id="path3821"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#ff3333;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 903.48864,-1865.5639 60,0"
+       id="path3823"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ff3333;fill-opacity:1;stroke:none;font-family:Source Code Pro;-inkscape-font-specification:Source Code Pro"
+       x="621.97351"
+       y="-1874.1537"
+       id="text3058"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3060"
+         x="621.97351"
+         y="-1874.1537">Sign up</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ff3333;fill-opacity:1;stroke:none;font-family:Source Code Pro;-inkscape-font-specification:Source Code Pro"
+       x="769.97644"
+       y="-1875.123"
+       id="text3062"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3064"
+         x="769.97644"
+         y="-1875.123">Log in</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Source Code Pro;-inkscape-font-specification:Sans"
+       x="391.67999"
+       y="841.12"
+       id="text3838"
+       sodipodi:linespacing="125%"
+       transform="translate(0,-1447.6378)"><tspan
+         sodipodi:role="line"
+         id="tspan3840"
+         x="391.67999"
+         y="841.12" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:22px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-opacity:1;font-family:Droid Serif;-inkscape-font-specification:Cormorant Garamond Bold"
+       x="468.88126"
+       y="1241.8218"
+       id="text4030-6"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4032-7"
+         x="468.88126"
+         y="1241.8218"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-opacity:1;font-family:Source Code Pro;-inkscape-font-specification:Source Code Pro Semi-Bold">Sign Up</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ff3333;fill-opacity:1;stroke:none;font-family:Source Code Pro;-inkscape-font-specification:Sans"
+       x="91.641037"
+       y="1003.5436"
+       id="text3982"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3984"
+         x="91.641037"
+         y="1003.5436">Simple Critic</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Source Code Pro;-inkscape-font-specification:Sans"
+       x="407.04001"
+       y="2569.9199"
+       id="text4315"
+       sodipodi:linespacing="125%"
+       transform="translate(0,-1947.6378)"><tspan
+         sodipodi:role="line"
+         id="tspan4317"
+         x="407.04001"
+         y="2569.9199" /></text>
+    <path
+       sodipodi:type="arc"
+       style="fill:#ff3333;fill-opacity:1;stroke:#ffffff;stroke-width:3;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path4183"
+       sodipodi:cx="184.55487"
+       sodipodi:cy="98.033768"
+       sodipodi:rx="94.045204"
+       sodipodi:ry="52.325901"
+       d="m 278.60007,98.033768 a 94.045204,52.325901 0 1 1 -0.3372,-4.427088"
+       transform="matrix(1.1996327,0,0,1.2236642,-74.319849,-1997.1416)"
+       sodipodi:start="0"
+       sodipodi:end="6.198478"
+       sodipodi:open="true" />
+    <text
+       xml:space="preserve"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Source Code Pro;-inkscape-font-specification:Sans"
+       x="60.811169"
+       y="-1887.7877"
+       id="text4185"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4187"
+         x="60.811169"
+         y="-1887.7877">Simple </tspan><tspan
+         sodipodi:role="line"
+         x="60.811169"
+         y="-1847.7877"
+         id="tspan4189">   Critic</tspan></text>
+    <rect
+       style="fill:#f2f2f2;fill-opacity:1;stroke:#ffffff;stroke-width:3.09813261;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect4768"
+       width="330.82788"
+       height="62.127251"
+       x="361.50198"
+       y="-1487.8351" />
+    <text
+       xml:space="preserve"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Source Code Pro;-inkscape-font-specification:Sans"
+       x="362.86713"
+       y="-1503.4406"
+       id="text4770"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4772"
+         x="362.86713"
+         y="-1503.4406">Username or Email</tspan></text>
+    <rect
+       style="fill:#e6e6e6;fill-opacity:1;stroke:#ffffff;stroke-width:3.07229161;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect4768-7"
+       width="325.19687"
+       height="62.153091"
+       x="365.02454"
+       y="-1338.0948" />
+    <text
+       xml:space="preserve"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Source Code Pro;-inkscape-font-specification:Sans"
+       x="455.49805"
+       y="-1357.9299"
+       id="text4770-3"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4772-2"
+         x="455.49805"
+         y="-1357.9299">Password</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:48px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Source Code Pro;-inkscape-font-specification:Sans"
+       x="507.4256"
+       y="-1628.9867"
+       id="text4820"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="507.4256"
+         y="-1628.9867"
+         id="tspan4824">Log in</tspan></text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect4826"
+       width="197.9899"
+       height="67.882248"
+       x="426.50671"
+       y="-1212.1125"
+       ry="14.142136" />
+    <text
+       xml:space="preserve"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Source Code Pro;-inkscape-font-specification:Sans"
+       x="470.34732"
+       y="-1171.1002"
+       id="text4828"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4830"
+         x="470.34732"
+         y="-1171.1002">Log in</tspan></text>
+    <image
+       y="982.37939"
+       x="36.08329"
+       id="image5136"
+       xlink:href="file:///home/zachb/MyIcons%20(3)/copyrighted.png"
+       height="24"
+       width="24" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 210.71782,891.40758 606.69762,0"
+       id="path5190"
+       inkscape:connector-curvature="0"
+       transform="translate(0,-1947.6378)" />
+    <text
+       xml:space="preserve"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Source Code Pro;-inkscape-font-specification:Sans"
+       x="529.39801"
+       y="-954.40692"
+       id="text5192"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5194"
+         x="538.99176"
+         y="-954.40692">Don't have </tspan><tspan
+         sodipodi:role="line"
+         x="529.39801"
+         y="-914.40692"
+         id="tspan5196"> an account?</tspan></text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect4826-9"
+       width="197.9899"
+       height="67.882248"
+       x="431.33514"
+       y="-852.5835"
+       ry="14.142136" />
+    <text
+       xml:space="preserve"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Source Code Pro;-inkscape-font-specification:Sans"
+       x="467.60669"
+       y="-810.81836"
+       id="text4828-7"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4830-4"
+         x="467.60669"
+         y="-810.81836">Sign up</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Bottom Sign up" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Jumbotron"
+     transform="translate(0,2232)" />
+</svg>
