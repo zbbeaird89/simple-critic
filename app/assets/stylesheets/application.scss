@@ -13,3 +13,101 @@
  */
  @import "bootstrap-sprockets";
  @import "bootstrap";
+
+/***************************
+          HEADER
+****************************/
+
+ .navbar a:first-child {
+   display: inline-block;
+   left: 20px;
+   position: relative;
+   margin-top: 12px;
+ }
+
+ .logo {
+   height: 90px;
+   width: 110px;
+
+   @media (min-width: 768px) {
+     width: 150px;
+     height: 120px;
+   }
+ }
+
+ .normal-navigation {
+   display: none;
+
+   @media (min-width: 768px) {
+     display: block;
+     float: right;
+   }
+
+   li {
+     display: inline-block;
+     list-style-type: none;
+     position: relative;
+     top: 40px;
+     padding: 0 20px 0 20px;
+
+     a {
+      color: tomato;
+      font-family: 'Source Code Pro';
+      font-size: 1.2em;
+
+      &:hover {
+        color: grey;
+        text-decoration: none;
+      }
+     }
+   }
+ }
+
+ .hamburger {
+   color: tomato;
+   display: inline-block;
+   float: right;
+   margin-left: 60px;
+   position: relative;
+   top: 40px;
+   right: 20px;
+
+   &:hover {
+     color: grey;
+     cursor: pointer;
+   }
+ }
+
+ #header-dropdown {
+   display: none;
+
+   @media (min-width: 768px) {
+     border-left: 1px solid black;
+     border-right: 1px solid black;
+     box-shadow: 5px 5px grey;
+     float: right;
+     position: absolute;
+     top: 90px;
+     right: 20px;
+     width: 20%;
+   }
+ }
+
+ .dropdown-link {
+   border-bottom: 1px solid grey;
+   color: tomato;
+   display: block;
+   font-size: 1.2em;
+   padding: 8px 0;
+   text-align: center;
+
+   &:first-child {
+     border-top: 1px solid grey;
+   }
+
+   &:hover {
+     text-decoration: none;
+     background-color: grey;
+     color: #fff;
+   }
+ }

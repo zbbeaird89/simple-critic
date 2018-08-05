@@ -2,16 +2,16 @@
 <html>
   <head>
     <title>SimpleCritic</title>
-    <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= render 'layouts/head_links' %>
   </head>
 
   <body>
+    <%= render "layouts/header" %>
+    <%= render "layouts/header_dropdown" %>
+    <!--
     <p class="alert alert-success"><%= notice %></p>
     <p class="alert alert-danger"><%= alert %></p>
-
+    -->
     <div class="container">
       <%= yield %>
     </div>
