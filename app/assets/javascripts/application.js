@@ -11,12 +11,6 @@
 // about supported directives.
 //
 //= require jquery
-//= require bootstrap-sprockets
+//= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-
-$(function() {
-  $('#hamburger').on('click', function() {
-    $('#header-dropdown').slideToggle(200);
-  });
-});
