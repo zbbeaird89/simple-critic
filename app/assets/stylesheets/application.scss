@@ -105,3 +105,31 @@
      margin-top: 40px;
    }
  }
+
+ .footer-nav {
+   position: relative;
+   bottom: 65px;
+ }
+
+ .copyright {
+   display: block;
+   font-size: 1em;
+   margin: 40px 0;
+ }
+
+ .footer-nav li {
+   color: tomato;
+   display: inline-block;
+   list-style: none;
+   padding-left: .5rem;
+   padding-right: .5rem;
+
+   a {
+     color: tomato;
+
+     &:hover {
+       color: grey;
+       text-decoration: none;
+     }
+   }
+ }
