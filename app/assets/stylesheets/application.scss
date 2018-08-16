@@ -106,6 +106,10 @@
    }
  }
 
+ /***************************
+           Footer
+ ****************************/
+
  .footer-nav {
    position: relative;
    bottom: 65px;
@@ -130,6 +134,65 @@
      &:hover {
        color: grey;
        text-decoration: none;
+     }
+   }
+ }
+
+ /***************************
+           Sign Up
+ ****************************/
+
+ .new_user {
+   text-align: center;
+
+   .field, .actions {
+     padding-top: 30px;
+   }
+ }
+
+ .divider {
+   color: grey;
+   font-size: 1rem;
+   padding-top: 30px;
+   text-align: center;
+
+   p {
+     display: inline;
+   }
+ }
+
+ .social-link {
+   border: 1px solid #000;
+   color: #000;
+   display: block;
+   font-size: 1.2em;
+   margin: 30px auto;
+   padding: 10px 0;
+   text-align: center;
+   text-decoration: none;
+   width: 250px;
+
+   &:hover {
+     background-color: tomato;
+     color: #fff;
+     text-decoration: none;
+   }
+
+   p {
+     display: inline;
+   }
+ }
+
+ .min-heading {
+   font-size: 1.5em;
+   padding: 30px 0;
+
+   a {
+     display: inline-block;
+     margin-top: 10px;
+
+     &:hover {
+       background-color: tomato;
      }
    }
  }

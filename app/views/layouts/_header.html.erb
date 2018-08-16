@@ -24,8 +24,8 @@
           </a>
 
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Sign Up</a>
-            <a class="dropdown-item" href="#">Log In</a>
+            <%= link_to "Sign Up", new_user_registration_path, class: "dropdown-item" %>
+            <%= link_to "Log In", new_user_session_path, class: "dropdown-item" %>
           </div>
         </li>
       </ul>
