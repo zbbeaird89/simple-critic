@@ -1,7 +1,7 @@
 <!-- Navigation -->
 <div class="container">
   <nav class="navbar navbar-expand-lg">
-    <a class="navbar-brand" href="#"><%= image_tag("logo.svg", class: "logo") %></a>
+    <%= link_to image_tag("logo.svg", class: "logo"), root_path, class: "navbar-brand" %>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
       <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
@@ -24,8 +24,13 @@
           </a>
 
           <div class="dropdown-menu">
-            <%= link_to "Sign Up", new_user_registration_path, class: "dropdown-item" %>
-            <%= link_to "Log In", new_user_session_path, class: "dropdown-item" %>
+            <% if user_signed_in? %>
+              <%= link_to "Profile", user_path(current_user), class: "dropdown-item" %>
+              <%= link_to "Log Out", destroy_user_session_path, :method => :delete, class: "dropdown-item" %>
+            <% else %>
+              <%= link_to "Sign Up", new_user_registration_path, class: "dropdown-item" %>
+              <%= link_to "Log In", new_user_session_path, class: "dropdown-item" %>
+            <% end %>
           </div>
         </li>
       </ul>

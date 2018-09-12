@@ -1,0 +1,58 @@
+<% provide(:title, "Sign Up") %>
+<h2 class="text-center">Sign up</br>For Free</h2>
+
+<%= form_for @user, url: user_registration_path  do |f| %>
+  <%= devise_error_messages! %>
+
+  <div class="field">
+    <%= f.label :username %><br />
+    <%= f.text_field :username, autofocus: true, autocomplete: "username" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password %>
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "off" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password_confirmation %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "off" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Sign up", class: "btn btn-lg mt-4" %>
+  </div>
+<% end %>
+
+<div class="divider">
+  <span class="line">------</span>
+  <p>Or sign up with</p>
+  <span class="line">------</span>
+</div>
+
+<a href="#" class="social-link">
+  <i class="fab fa-facebook"></i>
+  <p>Facebook</p>
+</a>
+
+<a href="#" class="social-link">
+  <i class="fab fa-twitter"></i>
+  <p>Twitter</p>
+</a>
+
+<div class="divider">
+  <span>---------------------------</span>
+</div>
+
+<div class="min-heading text-center">
+  <h5>If you already</br>have an account</h5>
+  <%= render "devise/shared/links" %>
+</div>

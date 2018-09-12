@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :users
   root "static_pages#home"
-  devise_for :users, :controller => { :registrations => "users" }
   resources :movies
+  resources :users, :only => [:show]
 end
