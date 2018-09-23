@@ -7,6 +7,7 @@ INDEX
 ******************/
 
 .movies {
+  clear: both;
   text-align: center;
 }
 
@@ -19,4 +20,9 @@ INDEX
 .title {
   font-size: 1em;
   /*margin-bottom: 80px;*/
+}
+
+.review-btn {
+  display: block;
+  border: 1px solid grey;
 }
