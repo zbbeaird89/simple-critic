@@ -13,8 +13,12 @@ INDEX
 
 .thumbnail {
   display: inline-block;
-  width: 250px;
+  width: 200px;
   margin: 0 10px;
+}
+
+.img-thumbnail {
+  height: 250px;
 }
 
 .title {
