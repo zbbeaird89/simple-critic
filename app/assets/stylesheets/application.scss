@@ -10,210 +10,22 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
- *= require_self
  */
 
- * {
-   font-family: "Source Code Pro", sans-serif;
- }
+/* Variables */
+@import "base/variables";
 
- h2 {
-   margin-top: 20px;
- }
+/* Default Styles */
+@import "base/default";
 
-/***************************
-          HEADER
-****************************/
+/* Partial Styles */
+@import "partials/*";
 
- .logo {
-   height: 100px;
-   width: 120px;
- }
+/* Layout Styles */
+@import "partials/layout/*";
 
- .divider {
-   color: #000;
-   font-size: 1.5em;
-   margin: 0 10px 0 10px;
- }
+/* Movies Styles */
+@import "partials/movies/*";
 
- .navbar-collapse {
-   text-align: center;
- }
-
- .nav-link {
-   color: tomato;
-
-   &:hover {
-     color: grey;
-   }
- }
-
- .jumbotron {
-   background-image: url("auditorium.jpg");
-   background-position: center;
-   background-size: cover;
-   height: 400px;
-   padding: 0;
-   text-align: center;
-
-   @media (max-width: 767px) {
-     height: 270px;
-   }
- }
-
- .jumbotron h1 {
-   color: #fff;
-   position: relative;
-   top: 20%;
-
-   @media (max-width: 767px) {
-     font-size: 1.5em;
-   }
- }
-
- .hero-btn {
-   color: #fff;
-   display: inline-block;
-   margin-top: 70px;
-
-   &:hover {
-     color: grey;
-     text-decoration: none;
-   }
-
-   @media (min-width: 767px) {
-     margin-top: 100px;
-   }
- }
-
- .card-title {
-   color: tomato;
- }
-
- .card-body i {
-   margin-bottom: .75rem;
- }
-
- .bottom-signup {
-   background-color: tomato;
-   color: #fff;
-   height: 270px;
-   text-align: center;
-
-   h3 {
-     font-size: 1.2em;
-     margin-top: 70px;
-
-     @media (min-width: 576px) {
-       font-size: 1.5em;
-     }
-   }
-
-   .hero-btn {
-     margin-top: 40px;
-   }
- }
-
- /***************************
-           Footer
- ****************************/
-
- footer {
-   clear: both;
- }
-
- .footer-nav {
-   position: relative;
-   bottom: 65px;
- }
-
- .copyright {
-   display: block;
-   font-size: 1em;
-   margin: 40px 0;
- }
-
- .footer-nav li {
-   color: tomato;
-   display: inline-block;
-   list-style: none;
-   padding-left: .5rem;
-   padding-right: .5rem;
-
-   a {
-     color: tomato;
-
-     &:hover {
-       color: grey;
-       text-decoration: none;
-     }
-   }
- }
-
- /***************************
-           Sign Up
- ****************************/
-
- .new_user {
-   text-align: center;
-
-   .field, .actions {
-     padding-top: 30px;
-   }
- }
-
- .divider {
-   color: grey;
-   font-size: 1rem;
-   padding-top: 30px;
-   text-align: center;
-
-   p {
-     display: inline;
-   }
- }
-
- .social-link {
-   border: 1px solid #000;
-   color: #000;
-   display: block;
-   font-size: 1.2em;
-   margin: 30px auto;
-   padding: 10px 0;
-   text-align: center;
-   text-decoration: none;
-   width: 250px;
-
-   &:hover {
-     background-color: tomato;
-     color: #fff;
-     text-decoration: none;
-   }
-
-   p {
-     display: inline;
-   }
- }
-
- .min-heading {
-   font-size: 1.5em;
-   padding: 30px 0;
-
-   a {
-     display: inline-block;
-     margin-top: 20px;
-
-     &:hover {
-       background-color: tomato;
-     }
-   }
- }
-
- /***************************
-           Log In
- ****************************/
-
- .forgot-password {
-   font-size: .7em;
- }
+/* Responsive Styles */
+@import "responsive/*";

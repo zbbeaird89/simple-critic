@@ -1,0 +1,54 @@
+.new_user {
+  text-align: center;
+
+  .field, .actions {
+    padding-top: 30px;
+  }
+}
+
+.divider {
+  color: $grey;
+  font-size: 1rem;
+  padding-top: 30px;
+  text-align: center;
+
+  p {
+    display: inline;
+  }
+}
+
+.social-link {
+  border: 1px solid $dark;
+  color: $dark;
+  display: block;
+  font-size: 1.2em;
+  margin: 30px auto;
+  padding: 10px 0;
+  text-align: center;
+  text-decoration: none;
+  width: 250px;
+
+  &:hover {
+    background-color: $theme;
+    color: $light;
+    text-decoration: none;
+  }
+
+  p {
+    display: inline;
+  }
+}
+
+.min-heading {
+  font-size: 1.5em;
+  padding: 30px 0;
+
+  a {
+    display: inline-block;
+    margin-top: 20px;
+
+    &:hover {
+      background-color: $theme;
+    }
+  }
+}

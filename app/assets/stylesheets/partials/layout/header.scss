@@ -1,0 +1,72 @@
+.logo {
+  height: 100px;
+  width: 120px;
+}
+
+.divider {
+  color: $dark;
+  font-size: 1.5em;
+  margin: 0 10px 0 10px;
+}
+
+.navbar-collapse {
+  text-align: center;
+}
+
+.nav-link {
+  color: $theme;
+
+  &:hover {
+    color: $grey;
+  }
+}
+
+.jumbotron {
+  background-image: url("auditorium.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  padding: 0;
+  text-align: center;
+}
+
+.jumbotron h1 {
+  color: $light;
+  position: relative;
+  top: 20%;
+}
+
+.hero-btn {
+  color: $light;
+  display: inline-block;
+  margin-top: 70px;
+
+  &:hover {
+    color: $grey;
+    text-decoration: none;
+  }
+}
+
+.card-title {
+  color: $theme;
+}
+
+.card-body i {
+  margin-bottom: .75rem;
+}
+
+.bottom-signup {
+  background-color: $theme;
+  color: $light;
+  height: 270px;
+  text-align: center;
+
+  h3 {
+    font-size: 1.2em;
+    margin-top: 70px;
+  }
+
+  .hero-btn {
+    margin-top: 40px;
+  }
+}
