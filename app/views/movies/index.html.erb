@@ -4,7 +4,7 @@
   <% @movies.each do |movie| %>
     <%= link_to movie, class: "thumbnail" do %>
       <%= image_tag("https://vignette.wikia.nocookie.net/my-miis/images/a/a5/X.png/revision/latest?cb=20180213211539", class: "img-thumbnail") %>
-      <h2 class="title mb-5"><%= movie.title %></h2>
+      <h2 class="title mb-5"><%= truncate(movie.title, :length => 20) %></h2>
     <% end %>
   <% end %>
 </div>
