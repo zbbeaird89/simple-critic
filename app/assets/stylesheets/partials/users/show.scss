@@ -1,0 +1,29 @@
+.user-logo {
+  border-radius: 50%;
+  display: block;
+  height: 200px;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 200px;
+}
+
+.user-info {
+  border-bottom: 1px solid $dark;
+
+  p {
+    font-size: 18px;
+  }
+
+}
+
+.stat {
+  color: $dark;
+  display: inline-block;
+  font-size: 28px;
+  text-decoration: none;
+
+  &:hover {
+    color: $theme;
+    text-decoration: none;
+  }
+}

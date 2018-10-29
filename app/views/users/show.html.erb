@@ -1,1 +1,12 @@
-<%= @user.username %>
+<div class="user-info pb-5">
+  <section class="info">
+    <%= render "users/info/bio", user: @user %>
+  </section>
+
+  <section class="stats text-center">
+    <div class="row">
+      <%= render "users/info/stats", user: @user %>
+    </div>
+  </section>
+
+</div>
