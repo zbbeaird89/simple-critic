@@ -1,8 +1,8 @@
-<!--<%= image_tag gravatar_for(user.email) %>-->
+<!--<%= image_tag gravatar_for(review.user.email) %>-->
 <div class="card-user-info float-left">
   <%= image_tag("https://upload.wikimedia.org/wikipedia/en/a/a6/The_Thing_%281982%29_theatrical_poster.jpg",
                  class: "card-user-img") %>
-  <h3><%= user.username %></h3>
+  <h3><%= review.user.username %></h3>
   <p>22 minutes ago</p>
 </div>
 

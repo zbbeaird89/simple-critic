@@ -3,5 +3,5 @@
 <%= link_to "Add Review", new_movie_review_path(@movie), class: "btn btn-lg review-btn mb-5 mt-3" %>
 
 <% @reviews.each do |review| %>
-  <%= render "shared/cards/review_card", review: review, user: current_user %>
+  <%= render "shared/cards/review_card", review: review %>
 <% end %>

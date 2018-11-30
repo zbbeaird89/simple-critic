@@ -1,5 +1,7 @@
 <%= render "users/user_info" %>
 
 <div class="row">
-  <%= render "shared/cards/review_card", user: @user %>
+  <% @reviews.each do |review| %>
+    <%= render "shared/cards/review_card", review: review %>
+  <% end %>
 </div>
