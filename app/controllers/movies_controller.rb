@@ -7,6 +7,7 @@ class MoviesController < ApplicationController
 
   def new
     @movie = Movie.new
+    @genre_options = Genre.all.map { |g| [g.name, g.id] }
   end
 
   def create
@@ -26,7 +27,7 @@ class MoviesController < ApplicationController
   private
 
     def movie_params
-      params.require(:movie).permit(:title, :description)
+      params.require(:movie).permit(:title, :description, :genre_id)
     end
 
 
