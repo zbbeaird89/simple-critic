@@ -1,6 +1,6 @@
 <%= render "movies/movie_info", movie: @movie %>
 
-<%= link_to "Add Review", new_movie_review_path(@movie), class: "btn btn-lg review-btn mb-5 mt-3" %>
+<%= link_to "Add Review", new_movie_review_path(@movie), class: "btn btn-lg review-btn mb-5 mt-5" %>
 
 <% @reviews.each do |review| %>
   <%= render "shared/cards/review_card", review: review %>
