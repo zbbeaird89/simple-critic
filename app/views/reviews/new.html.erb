@@ -1,6 +1,9 @@
 <div class="row">
   <div class="col-sm-8 col-lg-6 m-auto">
     <%= bootstrap_form_for [@movie, @review], url: movie_reviews_path do |f| %>
+      <div class="review-rating">
+        <i class="far fa-star fa-2x"></i>
+      </div>
       <%= f.text_area :opinion %>
       <%= f.submit "Submit" %>
     <% end %>
