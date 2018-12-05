@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root "static_pages#home"
   get "/about", to: "static_pages#about"
   resources :movies do
-    resources :reviews
+    resources :reviews, shallow: true
   end
   resources :users, :only => [:show]
 end
