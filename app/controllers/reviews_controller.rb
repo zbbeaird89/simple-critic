@@ -11,10 +11,14 @@ class ReviewsController < ApplicationController
     @review.movie_id = params[:movie_id]
 
     if @review.save
-      redirect_to movies_url
+      redirect_to @review
     else
       render "new"
     end
+  end
+
+  def show
+    @review = Review.find(params[:id])
   end
 
   private
