@@ -1,0 +1,54 @@
+$(document).on('turbolinks:load', function() {
+
+  // Star rating responses to both hover and click events
+  $('.rating-form img').on({
+    click:      function() { turnOnStars($(this), "click"); },
+    mouseenter: function() { turnOnStars($(this), "mouseenter"); },
+    mouseleave: function() { restoreStarsState($(this)); }
+  });
+
+
+  function turnOnStars(rootStar, ev) {
+    $starId = parseInt(rootStar.attr('id'));
+
+    turnOffTrailingStars($starId, ev)
+
+    for (var i = $starId; i > 0; i--) {
+      var $star = $('.rating-form img#' + i);
+
+      if (ev === "click") {
+        $star.attr('data-state', "on")
+      }
+
+      $star.attr('src', '<%= image_path "star-on" %>');
+    }
+  } // turnOnStars
+
+
+  function turnOffTrailingStars(starId, ev) {
+    starsLength = $('.rating-form img').length
+
+    if (starId < starsLength) {
+      for (var i = starId; i < starsLength; i++) {
+        var $star = $('.rating-form img#' + (i + 1));
+
+        if (ev === "click") {
+          $star.attr('data-state', "off")
+        }
+
+        $star.attr('src', '<%= image_path "star-off" %>');
+      }
+    }
+  } // turnOffTrailingStars
+  
+
+  function restoreStarsState(rootStar) {
+    rootStar.parent().children().each(function(i, star) {
+      if ($(star).attr('data-state') === 'on') {
+        $(star).attr('src', '<%= image_path "star-on" %>');
+      } else {
+        $(star).attr('src', '<%= image_path "star-off" %>')
+      }
+    });
+  } // restoreStarsState
+});
