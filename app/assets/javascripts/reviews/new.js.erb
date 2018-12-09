@@ -8,13 +8,14 @@ $(document).on('turbolinks:load', function() {
   });
 
 
+
   function turnOnStars(rootStar, ev) {
-    $starId = parseInt(rootStar.attr('id'));
+    starIndex = rootStar.parent().children().index(rootStar);
 
-    turnOffTrailingStars($starId, ev)
+    turnOffTrailingStars(rootStar, starIndex, ev)
 
-    for (var i = $starId; i > 0; i--) {
-      var $star = $('.rating-form img#' + i);
+    for (var i = starIndex; i >= 0; i--) {
+      var $star = findStar(rootStar, i);
 
       if (ev === "click") {
         $star.attr('data-state', "on")
@@ -25,12 +26,13 @@ $(document).on('turbolinks:load', function() {
   } // turnOnStars
 
 
-  function turnOffTrailingStars(starId, ev) {
-    starsLength = $('.rating-form img').length
 
-    if (starId < starsLength) {
-      for (var i = starId; i < starsLength; i++) {
-        var $star = $('.rating-form img#' + (i + 1));
+  function turnOffTrailingStars(rootStar, starIndex, ev) {
+    starsLength = 5
+
+    if (starIndex < (starsLength - 1)) {
+      for (var i = starIndex; i < (starsLength -1); i++) {
+        var $star = findStar(rootStar, (i + 1));
 
         if (ev === "click") {
           $star.attr('data-state', "off")
@@ -40,7 +42,14 @@ $(document).on('turbolinks:load', function() {
       }
     }
   } // turnOffTrailingStars
-  
+
+
+
+  function findStar(rootStar, i) {
+    return rootStar.parent().children().eq(i);
+  } // findStar
+
+
 
   function restoreStarsState(rootStar) {
     rootStar.parent().children().each(function(i, star) {
