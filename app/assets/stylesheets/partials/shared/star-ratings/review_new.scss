@@ -1,3 +1,15 @@
-.rating-form img {
+.rating-form {
+  font-size: 20px;
+  text-align: center;
+}
+
+.rating-form .stars {
+  margin-bottom: 40px;
+}
+
+.rating-form .star {
   cursor: pointer;
+  height: 20px;
+  margin: 0 5px 0;
+  width: 20px;
 }
