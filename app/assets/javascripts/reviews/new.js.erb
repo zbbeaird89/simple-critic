@@ -23,6 +23,10 @@ $(document).on('turbolinks:load', function() {
 
       $star.attr('src', '<%= image_path "star-on" %>');
     }
+
+    if (ev === "click") {
+      setInputValue(rootStar, (starIndex + 1))
+    }
   } // turnOnStars
 
 
@@ -60,4 +64,11 @@ $(document).on('turbolinks:load', function() {
       }
     });
   } // restoreStarsState
+
+
+
+  function setInputValue(star, value) {
+    $ratingName = star.parent().parent().parent().attr('class');
+    $('#new_review #review_' + $ratingName + '_rating').val(value);
+  }
 });
