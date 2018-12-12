@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181205112515) do
+ActiveRecord::Schema.define(version: 20181212101101) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -81,7 +81,14 @@ ActiveRecord::Schema.define(version: 20181205112515) do
     t.text "opinion"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "rating"
+    t.integer "plot_rating"
+    t.integer "acting_rating"
+    t.integer "screenplay_rating"
+    t.integer "cinematography_rating"
+    t.integer "musical_score_rating"
+    t.integer "editing_rating"
+    t.integer "directing_rating"
+    t.integer "overall_rating"
     t.index ["movie_id"], name: "index_reviews_on_movie_id"
     t.index ["user_id"], name: "index_reviews_on_user_id"
   end
