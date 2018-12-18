@@ -9,10 +9,29 @@
               :password_confirmation => "password")
 end
 
+8.times do |n|
+  Genre.create(:name => Faker::Book.genre)
+end
+
 12.times do |n|
   title = Faker::Book.title
   description = Faker::Lorem.sentence(10)
   Movie.create(:title => title,
                :description => description,
-               :user_id => rand(1..12))
+               :user_id => rand(1..12),
+               :genre_id => rand(1..8))
+end
+
+30.times do |n|
+  Review.create(:user_id => rand(1..12),
+                :movie_id => rand(1..12),
+                :plot_rating => rand(1..5),
+                :acting_rating => rand(1..5),
+                :screenplay_rating => rand(1..5),
+                :cinematography_rating => rand(1..5),
+                :musical_score_rating => rand(1..5),
+                :editing_rating => rand(1..5),
+                :directing_rating => rand(1..5),
+                :average_rating => rand(1..5),
+                :opinion => Faker::Hipster.paragraph)
 end
