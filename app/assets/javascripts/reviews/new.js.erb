@@ -80,8 +80,9 @@ $(document).on('turbolinks:load', function() {
   // and sent to params
   function setInputValue(star, value, ev) {
     if (isClickEvent(ev)) {
-      $ratingName = star.parent().parent().parent().attr('class');
-      $('#new_review #review_' + $ratingName + '_rating').val(value);
+      ratingName = star.parent().parent().parent().attr('class');
+      console.log(ratingName + " : " + value);
+      $('#new_review #review_' + ratingName + '_rating').val(value);
     }
   } // setInputValue
 
@@ -92,17 +93,17 @@ $(document).on('turbolinks:load', function() {
   // to average rating score. Average rating is 'display: none' by
   // default and will only show after all other ratings have been rated
   function setAverageRating(ev) {
-    var $averageRating = $('.rating-form #average_rating');
+    var $averageRating = $('.rating-form #average');
 
     if (allFieldsRated()) {
       var average   = getAverageStarRating(),
           $star     = $averageRating.find('.stars .star').eq(Math.round(average) - 1),
           starIndex = $averageRating.find('.stars .star').index($star);
 
-      $averageRating.removeClass('d-none').addClass('d-block');
+      $averageRating.removeClass('d-none');
       turnOffStars($star, starIndex, ev);
       turnOnStars($star, starIndex, ev);
-      setInputValue($star, Math.round(average) - 1, ev);
+      setInputValue($star, (Math.round(average) - 1), ev);
     }
   } // setOverallRating
 
