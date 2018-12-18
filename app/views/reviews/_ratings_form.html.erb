@@ -1,36 +1,41 @@
 <div class="rating-form">
-  <div class="plot">
+  <div class="plot" data-star="rateable">
     <lable>Plot</label>
     <%= render "reviews/stars" %>
   </div>
 
-  <div class="acting">
+  <div class="acting" data-star="rateable">
     <lable>Acting</label>
     <%= render "reviews/stars" %>
   </div>
 
-  <div class="screenplay">
+  <div class="screenplay" data-star="rateable">
     <lable>Screenplay</label>
     <%= render "reviews/stars" %>
   </div>
 
-  <div class="cinematography">
+  <div class="cinematography" data-star="rateable">
     <lable>Cinematography</label>
     <%= render "reviews/stars" %>
   </div>
 
-  <div class="musical_score">
+  <div class="musical_score" data-star="rateable">
     <lable>Musical Score</label>
     <%= render "reviews/stars" %>
   </div>
 
-  <div class="editing">
+  <div class="editing" data-star="rateable">
     <lable>Editing</label>
     <%= render "reviews/stars" %>
   </div>
 
-  <div class="directing">
+  <div class="directing" data-star="rateable">
     <lable>Directing</label>
+    <%= render "reviews/stars" %>
+  </div>
+
+  <div class="average_rating d-none" id="average_rating">
+    <lable>Overall</label>
     <%= render "reviews/stars" %>
   </div>
 </div>

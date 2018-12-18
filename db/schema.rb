@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181212101101) do
+ActiveRecord::Schema.define(version: 20181218092201) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -88,7 +88,7 @@ ActiveRecord::Schema.define(version: 20181212101101) do
     t.integer "musical_score_rating"
     t.integer "editing_rating"
     t.integer "directing_rating"
-    t.integer "overall_rating"
+    t.integer "average_rating"
     t.index ["movie_id"], name: "index_reviews_on_movie_id"
     t.index ["user_id"], name: "index_reviews_on_user_id"
   end
