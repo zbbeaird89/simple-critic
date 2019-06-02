@@ -1,0 +1,142 @@
+$(document).on('turbolinks:load', function() {
+
+  // Star rating responses to both hover and click events
+  $('.rating-form div[data-star="rateable"] .stars .star').on({
+    click:      function(ev) { activateStarUI($(this), ev); },
+    mouseenter: function(ev) { activateStarUI($(this), ev); },
+    mouseleave: function()   { restoreStarsState($(this)); }
+  });
+
+
+
+  function activateStarUI(rootStar, ev) {
+    var fieldName = rootStar.parent().parent().parent().attr('id'), // .stars > label > .plot
+        starIndex = rootStar.parent().children().index(rootStar); // .stars > [img, img, img, img, img]
+
+    turnOffStars(rootStar, starIndex, ev);
+    turnOnStars(rootStar, starIndex, ev);
+    setInputValue(rootStar, (starIndex + 1), ev);
+
+    if (ev.type === 'click') {
+      setAverageRating(ev);
+    }
+  } // turnOnStars
+
+
+
+  function turnOffStars(rootStar, starIndex, ev) {
+    starsLength = 5
+
+    if (starIndex < (starsLength - 1)) {
+      for (var i = starIndex; i < (starsLength -1); i++) {
+        var $star = findStar(rootStar, (i + 1));
+
+        // mouseenter will not toggle data-state
+        if (isClickEvent(ev)) {
+          $star.attr('data-state', "off")
+        }
+
+        $star.attr('src', '/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png');
+      }
+    }
+  } // turnOffTrailingStars
+
+
+
+  function turnOnStars(rootStar, starIndex, ev) {
+    for (var i = starIndex; i >= 0; i--) {
+      var $star = findStar(rootStar, i);
+
+      // mouseenter will not toggle data-state
+      if (isClickEvent(ev)) {
+        $star.attr('data-state', "on")
+      }
+
+      $star.attr('src', '/assets/star-on-fd26bf0ea0990cfd808f7540f958eed324b86fc609bf56ec2b3a5612cdfde5f5.png');
+    }
+  } // turnOnStars
+
+
+
+  function findStar(rootStar, i) {
+    return rootStar.parent().children().eq(i);
+  } // findStar
+
+
+
+  function restoreStarsState(rootStar) {
+    rootStar.parent().children().each(function(i, star) {
+      if ($(star).attr('data-state') === 'on') {
+        $(star).attr('src', '/assets/star-on-fd26bf0ea0990cfd808f7540f958eed324b86fc609bf56ec2b3a5612cdfde5f5.png');
+      } else {
+        $(star).attr('src', '/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png')
+      }
+    });
+  } // restoreStarsState
+
+
+
+  // The star rating a user chooses will be set as input value
+  // and sent to params
+  function setInputValue(star, value, ev) {
+    if (isClickEvent(ev)) {
+      ratingName = star.parent().parent().parent().attr('class');
+      console.log(ratingName + " : " + value);
+      $('#new_review #review_' + ratingName + '_rating').val(value);
+    }
+  } // setInputValue
+
+
+
+  // Average rating will be dependant on the other ratings scores
+  // taking the average of all other ratings and applying it to
+  // to average rating score. Average rating is 'display: none' by
+  // default and will only show after all other ratings have been rated
+  function setAverageRating(ev) {
+    var $averageRating = $('.rating-form #average');
+
+    if (allFieldsRated()) {
+      var average   = getAverageStarRating(),
+          $star     = $averageRating.find('.stars .star').eq(Math.round(average) - 1),
+          starIndex = $averageRating.find('.stars .star').index($star);
+
+      $averageRating.removeClass('d-none');
+      turnOffStars($star, starIndex, ev);
+      turnOnStars($star, starIndex, ev);
+      setInputValue($star, (Math.round(average) - 1), ev);
+    }
+  } // setOverallRating
+
+
+
+  // returns true if all fields have been rated
+  function allFieldsRated() {
+    var allValuesExist = $('#new_review input[id*="review"]').filter(function(i) {
+      return i != 7  //excludes :overall_rating
+    }).toArray().every(function(field) {
+      return field.getAttribute('value') !== null
+    });
+
+    return allValuesExist;
+  } // allFieldsRated
+
+
+
+  function getAverageStarRating() {
+    var average = $('#new_review input[id*="review"]').filter(function(i) {
+      return i != 7  //excludes :overall_rating
+    }).toArray().reduce(function(avg, field) {
+      return avg + parseInt(field.getAttribute('value'));
+    }, 0) / 7; // divides median of array by length of array
+               // which is 7 because there are 7 total rating fields
+               // excluding average_rating field
+
+    return average
+  } // getAverageStarRating
+
+
+
+  function isClickEvent(ev) {
+    return ev.type === 'click';
+  } // isClickEvent
+});

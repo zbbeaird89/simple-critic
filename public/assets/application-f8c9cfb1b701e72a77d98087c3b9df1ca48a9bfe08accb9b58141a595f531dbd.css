@@ -1,0 +1,365 @@
+.rails-bootstrap-forms-date-select select,
+.rails-bootstrap-forms-time-select select,
+.rails-bootstrap-forms-datetime-select select {
+  display: inline-block;
+  width: auto;
+}
+
+.rails-bootstrap-forms-error-summary {
+  margin-top: 10px;
+}
+/*
+
+*/
+/* Variables */
+/* Default Styles */
+/* line 1, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/base/default.scss */
+* {
+  font-family: "Source Code Pro", sans-serif;
+}
+
+/* line 5, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/base/default.scss */
+h2 {
+  margin-top: 20px;
+}
+
+/* Layout Styles */
+/* line 1, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/layout/footer.scss */
+footer {
+  clear: both;
+}
+
+/* line 5, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/layout/footer.scss */
+.footer-nav {
+  position: relative;
+  bottom: 65px;
+}
+
+/* line 10, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/layout/footer.scss */
+.copyright {
+  display: block;
+  font-size: 1em;
+  margin: 40px 0;
+}
+
+/* line 16, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/layout/footer.scss */
+.footer-nav li {
+  color: tomato;
+  display: inline-block;
+  list-style: none;
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+/* line 23, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/layout/footer.scss */
+.footer-nav li a {
+  color: tomato;
+}
+/* line 26, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/layout/footer.scss */
+.footer-nav li a:hover {
+  color: grey;
+  text-decoration: none;
+}
+
+/* line 1, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/layout/header.scss */
+.logo {
+  height: 100px;
+  width: 120px;
+}
+
+/* line 6, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/layout/header.scss */
+.divider {
+  color: #000000;
+  font-size: 1.5em;
+  margin: 0 10px 0 10px;
+}
+
+/* line 12, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/layout/header.scss */
+.navbar-collapse {
+  text-align: center;
+}
+
+/* line 16, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/layout/header.scss */
+.nav-link {
+  color: tomato;
+}
+/* line 19, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/layout/header.scss */
+.nav-link:hover {
+  color: grey;
+}
+
+/* line 24, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/layout/header.scss */
+.jumbotron {
+  background-image: url("auditorium.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  padding: 0;
+  text-align: center;
+}
+
+/* line 33, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/layout/header.scss */
+.jumbotron h1 {
+  color: #ffffff;
+  position: relative;
+  top: 20%;
+}
+
+/* line 39, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/layout/header.scss */
+.hero-btn {
+  color: #ffffff;
+  display: inline-block;
+  margin-top: 70px;
+}
+/* line 44, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/layout/header.scss */
+.hero-btn:hover {
+  color: grey;
+  text-decoration: none;
+}
+
+/* line 50, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/layout/header.scss */
+.card-title {
+  color: tomato;
+}
+
+/* line 54, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/layout/header.scss */
+.card-body i {
+  margin-bottom: .75rem;
+}
+
+/* line 58, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/layout/header.scss */
+.bottom-signup {
+  background-color: tomato;
+  color: #ffffff;
+  height: 270px;
+  text-align: center;
+}
+/* line 64, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/layout/header.scss */
+.bottom-signup h3 {
+  font-size: 1.2em;
+  margin-top: 70px;
+}
+/* line 69, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/layout/header.scss */
+.bottom-signup .hero-btn {
+  margin-top: 40px;
+}
+
+/* Shared Styles */
+/* line 1, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/shared/cards/card.scss */
+.card {
+  margin: 40px auto 0;
+}
+
+/* line 7, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/shared/cards/card.scss */
+.card-user-info h3 {
+  position: absolute;
+  top: 20px;
+  left: 90px;
+}
+/* line 13, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/shared/cards/card.scss */
+.card-user-info p {
+  position: absolute;
+  top: 50px;
+  left: 90px;
+}
+
+/* line 1, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/shared/cards/review_card.scss */
+.card-user-img {
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  max-width: 100%;
+}
+
+/* Shared Styles */
+/* line 1, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/shared/forms/form.scss */
+.field, .actions {
+  padding-top: 30px;
+  text-align: center;
+}
+
+/* line 6, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/shared/forms/form.scss */
+.new_movie {
+  text-align: center;
+}
+
+/* line 10, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/shared/forms/form.scss */
+.form-group {
+  margin-bottom: 40px;
+}
+
+/* line 1, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/shared/forms/login.scss */
+.forgot-password {
+  font-size: .7em;
+}
+
+/* line 1, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/shared/forms/sign_up.scss */
+.divider {
+  color: grey;
+  font-size: 1rem;
+  padding-top: 30px;
+  text-align: center;
+}
+/* line 7, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/shared/forms/sign_up.scss */
+.divider p {
+  display: inline;
+}
+
+/* line 12, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/shared/forms/sign_up.scss */
+.social-link {
+  border: 1px solid #000000;
+  color: #000000;
+  display: block;
+  font-size: 1.2em;
+  margin: 30px auto;
+  padding: 10px 0;
+  text-align: center;
+  text-decoration: none;
+  width: 250px;
+}
+/* line 23, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/shared/forms/sign_up.scss */
+.social-link:hover {
+  background-color: tomato;
+  color: #ffffff;
+  text-decoration: none;
+}
+/* line 29, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/shared/forms/sign_up.scss */
+.social-link p {
+  display: inline;
+}
+
+/* line 34, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/shared/forms/sign_up.scss */
+.min-heading {
+  font-size: 1.5em;
+  padding: 30px 0;
+}
+/* line 38, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/shared/forms/sign_up.scss */
+.min-heading a {
+  display: inline-block;
+  margin-top: 20px;
+}
+/* line 42, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/shared/forms/sign_up.scss */
+.min-heading a:hover {
+  background-color: tomato;
+}
+
+/* Shared Styles */
+/* line 1, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/shared/star-ratings/review_new.scss */
+.rating-form {
+  font-size: 20px;
+  text-align: center;
+}
+
+/* line 6, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/shared/star-ratings/review_new.scss */
+.rating-form .stars {
+  margin-bottom: 40px;
+}
+
+/* line 10, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/shared/star-ratings/review_new.scss */
+.rating-form .star {
+  cursor: pointer;
+  height: 20px;
+  margin: 0 5px 0;
+  width: 20px;
+}
+
+/* Movies Styles */
+/* line 1, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/movies/index.scss */
+.movies {
+  clear: both;
+  text-align: center;
+}
+
+/* line 6, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/movies/index.scss */
+.thumbnail {
+  display: inline-block;
+  width: 200px;
+  margin: 0 10px;
+}
+
+/* line 12, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/movies/index.scss */
+.img-thumbnail {
+  height: 250px;
+}
+
+/* line 16, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/movies/index.scss */
+.title {
+  font-size: 1em;
+  /*margin-bottom: 80px;*/
+}
+
+/* line 21, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/movies/index.scss */
+.review-btn {
+  border: 1px solid grey;
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+}
+
+/* line 1, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/movies/show.scss */
+.movie-info {
+  border-bottom: 1px solid grey;
+}
+
+/* Movies Styles */
+/* line 1, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/users/show.scss */
+.user-logo {
+  border-radius: 50%;
+  display: block;
+  height: 200px;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 200px;
+}
+
+/* line 10, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/users/show.scss */
+.user-info {
+  border-bottom: 1px solid #000000;
+}
+/* line 13, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/users/show.scss */
+.user-info p {
+  font-size: 18px;
+}
+
+/* line 19, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/users/show.scss */
+.stat {
+  color: #000000;
+  display: inline-block;
+  font-size: 28px;
+  text-decoration: none;
+}
+/* line 25, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/partials/users/show.scss */
+.stat:hover {
+  color: tomato;
+  text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (min-width: 767px) {
+  /* line 2, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/responsive/desktop.scss */
+  .hero-btn {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 2, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/responsive/mobile.scss */
+  .jumbotron {
+    height: 270px;
+  }
+  /* line 5, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/responsive/mobile.scss */
+  .jumbotron h1 {
+    font-size: 1.5em;
+  }
+
+  /* line 10, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/responsive/mobile.scss */
+  .stat {
+    font-size: 22px;
+  }
+}
+@media (min-width: 576px) {
+  /* line 16, /home/zachb/Rails_Apps/SimpleCritic/app/assets/stylesheets/responsive/mobile.scss */
+  .bottom-signup h3 {
+    font-size: 1.5em;
+  }
+}
