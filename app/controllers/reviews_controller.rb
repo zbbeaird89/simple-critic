@@ -9,9 +9,10 @@ class ReviewsController < ApplicationController
   def create
     @review = current_user.reviews.build(review_params)
     @review.movie_id = params[:movie_id]
+    @movie = Movie.find(@review.movie_id)
 
     if @review.save
-      redirect_to @review
+      redirect_to @movie
     else
       render "new"
     end
@@ -26,6 +27,6 @@ class ReviewsController < ApplicationController
     def review_params
       params.require(:review).permit(:user_id, :movie_id, :plot_rating, :acting_rating,
                                      :screenplay_rating, :cinematography_rating, :musical_score_rating,
-                                     :editing_rating, :directing_rating, :overall_rating, :opinion)
+                                     :editing_rating, :directing_rating, :average_rating, :opinion)
     end
 end
