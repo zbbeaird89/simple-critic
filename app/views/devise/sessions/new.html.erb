@@ -7,13 +7,16 @@
   </div>
 
   <div class="field">
-    <%= f.label :password %><br />
+    <%= f.label :password %>
+
+    <% if devise_mapping.recoverable? %>
+    <%= link_to "Forgot password?", new_password_path(resource_name), class: "forgot-password" %>
+    <% end %></br>
+
     <%= f.password_field :password, autocomplete: "off" %>
+
   </div>
 
-  <% if devise_mapping.recoverable? %>
-    <%= link_to "Forgot password?", new_password_path(resource_name), class: "forgot-password" %>
-  <% end %>
 
   <% if devise_mapping.rememberable? -%>
     <div class="field">
