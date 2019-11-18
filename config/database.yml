@@ -4,14 +4,13 @@ default: &default
   port: 5432
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   host: localhost
-  username: zach
-  password: <%= ENV['RAILS_DEV_PASSWORD'] %>
+  username: simplecritic
+  password: password1
 
 development:
   <<: *default
-  database: postgres_dev
+  database: simplecritic_development
 
 test:
   <<: *default
-  database: postgres_test
-  
+  database: simplecritic_test
