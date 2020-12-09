@@ -1,6 +1,6 @@
 require "rails_helper"
 #TODO test a successful login
-feature "Log In" do
+RSpec.feature "Log In", :type => :feature do
   let(:user) { create(:user) }
 
   scenario "Successful login" do
