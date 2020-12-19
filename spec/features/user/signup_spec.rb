@@ -1,6 +1,5 @@
 require "rails_helper"
 
-#TODO test all validations and their outcomes
 RSpec.feature "Sign Up", :type => :feature do
   let(:user) { build(:user) }
 

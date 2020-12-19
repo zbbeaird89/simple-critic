@@ -29,6 +29,7 @@ group :development, :test do
   gem 'selenium-webdriver'
   gem 'guard-rspec', '~> 4.7', '>= 4.7.3'
   gem 'database_cleaner'
+  gem 'poltergeist'
 end
 
 group :development do
