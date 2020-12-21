@@ -20,6 +20,7 @@ gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 gem "figaro"
 gem 'devise'
 gem 'faker', '~> 1.9', '>= 1.9.1'
+gem 'simplecov', require: false, group: :test
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.7'
