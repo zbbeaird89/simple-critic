@@ -7,6 +7,11 @@
 </div>
 
 <div class="float-right text-right">
-  <h5 class="card-stars">Review Stars</h5>
+  <!--<h5 class="card-stars">Review Stars</h5> -->
+  <ul>
+    <% review.average_rating.times do  %>
+      <li><%= image_tag "star-on", class: "star"%></li>
+    <% end %>
+  </ul>
   <button class="btn btn-follow">Follow</button>
 </div>
