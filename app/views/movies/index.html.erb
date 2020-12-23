@@ -10,10 +10,5 @@
     <% end %>
   <% end %>
 </div>
-<%#TODO if user is signed_in the creae account section can be ommitted  %>
-<div class="row">
-  <div class="col bottom-signup">
-    <h3>Create an account to</br>start reviewing movies!</h3>
-    <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-lg btn-outline-light hero-btn" %>
-  </div>
-</div>
+
+<%= render create_account_section_partial_path %>
