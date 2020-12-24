@@ -103,7 +103,7 @@ $(document).on('turbolinks:load', function() {
       $averageRating.removeClass('d-none');
       turnOffStars($star, starIndex, ev);
       turnOnStars($star, starIndex, ev);
-      setInputValue($star, (Math.round(average) - 1), ev);
+      setInputValue($star, (Math.round(average)), ev);
     }
   } // setOverallRating
 
@@ -124,7 +124,7 @@ $(document).on('turbolinks:load', function() {
 
   function getAverageStarRating() {
     var average = $('#new_review input[id*="review"]').filter(function(i) {
-      return i != 7  //excludes :overall_rating
+      return i != 7  //excludes :average_rating
     }).toArray().reduce(function(avg, field) {
       return avg + parseInt(field.getAttribute('value'));
     }, 0) / 7; // divides median of array by length of array
