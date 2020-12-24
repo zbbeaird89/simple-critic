@@ -9,8 +9,8 @@
 <div class="float-right text-right">
   <!--<h5 class="card-stars">Review Stars</h5> -->
   <ul>
-    <% review.average_rating.times do  %>
-      <li><%= image_tag "star-on", class: "star"%></li>
+    <% 5.times do |i| %>
+      <%= render review_card_star_rating_partial_path(i, review) %>
     <% end %>
   </ul>
   <button class="btn btn-follow">Follow</button>
