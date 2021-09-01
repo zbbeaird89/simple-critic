@@ -31,6 +31,17 @@
 <% end %>
 
 <div class="divider">
+  <span class="line">------</span>
+  <p>Or log in with</p>
+  <span class="line">------</span>
+</div>
+
+<%= link_to(user_facebook_omniauth_authorize_path, class: "social-link", method: :post)  do %>
+  <i class="fab fa-facebook"></i>
+  <p>Facebook</p>
+<% end %>
+
+<div class="divider">
   <span>---------------------------</span>
 </div>
 

@@ -38,10 +38,10 @@
   <span class="line">------</span>
 </div>
 
-<a href="#" class="social-link">
+<%= link_to(user_facebook_omniauth_authorize_path, class: "social-link", method: :post)  do %>
   <i class="fab fa-facebook"></i>
   <p>Facebook</p>
-</a>
+<% end %>
 
 <a href="#" class="social-link">
   <i class="fab fa-twitter"></i>

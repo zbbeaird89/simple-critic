@@ -20,6 +20,9 @@ gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 gem "figaro"
 gem 'devise'
 gem 'faker', '~> 1.9', '>= 1.9.1'
+gem 'omniauth-facebook'
+gem 'omniauth-google'
+gem 'omniauth-rails_csrf_protection'
 gem 'simplecov', require: false, group: :test
 
 group :development, :test do
