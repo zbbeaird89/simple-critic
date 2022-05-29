@@ -41,6 +41,11 @@
   <p>Facebook</p>
 <% end %>
 
+<%= link_to(user_google_oauth2_omniauth_authorize_path, class: "social-link", method: :post)  do %>
+  <i class="fab fa-google"></i>
+  <p>Google</p>
+<% end %>
+
 <div class="divider">
   <span>---------------------------</span>
 </div>

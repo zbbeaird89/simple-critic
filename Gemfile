@@ -22,7 +22,6 @@ gem 'devise'
 gem 'faker', '~> 1.9', '>= 1.9.1'
 gem 'omniauth-facebook'
 gem 'omniauth-google-oauth2'
-gem 'omniauth-twitter'
 gem 'omniauth-rails_csrf_protection'
 gem 'simplecov', require: false, group: :test
 

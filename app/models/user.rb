@@ -7,7 +7,7 @@ class User < ApplicationRecord
   has_many :reviews, dependent: :destroy
 
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :validatable, :omniauthable, omniauth_providers: %i[facebook]
+         :recoverable, :rememberable, :validatable, :omniauthable, omniauth_providers: %i[facebook google_oauth2]
 
   validates :username, presence: true, length: { maximum: 50 }
 
